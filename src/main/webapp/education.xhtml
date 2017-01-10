@@ -1,0 +1,119 @@
+<ui:composition template="template/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html" 
+                xmlns:f="http://xmlns.jcp.org/jsf/core" 
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:b="http://bootsfaces.net/ui">
+
+
+    <ui:define name="content">
+
+        <b:container>
+
+            <h2>Education</h2>
+
+            <b:tabView>
+                <b:tab title="School" >
+                    <h3>Oriel High School - Crawley</h3>
+                    <p>Up to the age of 16 i was a student here. I will list below the GCSE results achieved</p>
+                    <table class="educationTable">
+                        <tr>
+                            <td>Subject</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>ICT</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Business Studies</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Media Studies</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>BTEC PE</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>C</td>
+                        </tr>
+                    </table>
+                </b:tab>
+                <b:tab title="Collage" >
+                    <h3>The Collage Of Richard Collyer - Horsham</h3>
+                    <p>I went here from the age of 16 - 18</p>
+                    <table class="educationTable">
+                        <tr>
+                            <td>Subject</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Computing</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>BTEC ICT LEVEL 4</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Critical Thinking</td>
+                            <td>C</td>
+                        </tr>
+
+                    </table>
+                </b:tab>
+                <b:tab title="University" >
+                    <h3>The University of Newcastle - Australia, NSW</h3>
+                    <p>I was lucky enough to study two years of Computer Science in Australia.</p>
+                    <p>Here is a link to the course which i completed two years in 
+                        <h:outputLink value="https://www.newcastle.edu.au/degrees/bachelor-of-computer-science" target="_blank">https://www.newcastle.edu.au/degrees/bachelor-of-computer-science</h:outputLink></p>
+
+                    <table class="educationTable">
+                        <tr>
+                            <td>Subject</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Computing</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>BTEC ICT LEVEL 4</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Critical Thinking</td>
+                            <td>C</td>
+                        </tr>
+
+                    </table>
+
+                </b:tab>
+            </b:tabView>
+
+
+
+        </b:container>
+
+    </ui:define>
+</ui:composition>
