@@ -1,0 +1,46 @@
+<ui:composition template="template/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html" 
+                xmlns:f="http://xmlns.jcp.org/jsf/core" 
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:b="http://bootsfaces.net/ui">
+
+
+    <ui:define name="content">
+
+        <b:container>
+            <h2>About Me</h2>
+            <b:row>
+                <b:column col-md="4">
+                    <img src="#{request.contextPath}/resources/img/me.jpg" />
+                    
+                </b:column>
+                <b:column col-md="8">
+                    <table id="aboutMeTable">
+                        <tr>
+                            <td>Name: </td>
+                            <td>Jacob Hewitt</td>
+                        </tr>
+                        <tr>
+                            <td>Age: </td>
+                            <td>21</td>
+                        </tr>
+                    </table>
+                    <p>I'm a 21 year old student living in the UK. I'm currently studying Computing at the University of Portsmouth.</p>
+                    <p>I have always had a massive interest in software and technology and knew it was something I wanted to pursue from a young age.</p>
+                    <p>I began learning HTML and CSS while I was 16 and still in school. I then started to learn about JavaScript which prompted me to get into programming</p>
+                    <p>I started learning PHP from online resources and a book i borrowed from school.</p>
+                    <p>While I was in collage I borrowed the book "Heads First Java" by O'Reilly Media and quickly progressed my skills and knowledge.</p>
+                    <p>Throughout my studies I have started loads of personal projects which have forced me to learn and develop my skills.</p>
+                    <hr/>
+                    <p>In my spare time I enjoy listening to music, playing video games and socialising.
+                    </p>
+                        
+                    
+                </b:column>
+            </b:row>
+
+        </b:container>
+
+    </ui:define>
+</ui:composition>

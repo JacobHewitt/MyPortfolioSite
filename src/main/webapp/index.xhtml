@@ -1,0 +1,45 @@
+<ui:composition template="template/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html" 
+                xmlns:f="http://xmlns.jcp.org/jsf/core" 
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:b="http://bootsfaces.net/ui">
+
+
+    <ui:define name="content">
+
+        <b:container>
+
+            <b:jumbotron>
+                <b:container >
+                    <h1>Welcome to my portfolio</h1>
+                    <p>I'm Jacob Hewitt an aspiring software developer</p>
+                </b:container>
+            </b:jumbotron>
+
+            <b:row>
+                <b:column col-md="3">
+                    <h2>About Me</h2>
+                    <p>Visit to find out more about myself, my hobbies and why i got into programming</p>
+                    <b:button outcome="#{contextRoot}/about.xhtml" value="About >>"/>
+                </b:column>
+                <b:column col-md="3">
+                    <h2>Skills</h2>
+                    <p>Here I will tell you about the skills I possess and books i have read</p>
+                    <b:button outcome="#{contextRoot}/skills.xhtml" value="Skills >>"/>
+                </b:column>
+                <b:column col-md="3">
+                    <h2>Education</h2>
+                    <p>Click below to find out more about my school, collage and university education</p>
+                    <b:button outcome="#{contextRoot}/education.xhtml" value="Education >>"/>
+                </b:column>
+                <b:column col-md="3">
+                    <h2>Work</h2>
+                    <p>Click below to view my previous work and other stuff I'm showcasing</p>
+                    <b:button outcome="#{contextRoot}/work.xhtml" value="Work >>"/>
+                </b:column>
+            </b:row>
+        </b:container>
+
+    </ui:define>
+</ui:composition>
